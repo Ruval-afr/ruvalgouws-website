@@ -279,4 +279,61 @@ footer {
     width: 100%;
     bottom: 0;
 }
+/* GENERAL RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 100px; /* Adjust space for mobile */
+        padding-bottom: 100px; /* Prevent footer overlap */
+    }
+
+    /* NAVIGATION MENU - STACK FOR MOBILE */
+    nav ul {
+        flex-direction: column;  /* Stack menu items vertically */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    /* HERO SECTION - CENTER ALIGN FOR SMALL SCREENS */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .profile-img {
+        width: 140px;  /* Smaller profile pic */
+        margin-bottom: 10px;
+    }
+
+    /* BUTTON FIX - MAKE FULL WIDTH */
+    .btn {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    /* SKILLS PAGE - STACK SKILL CARDS */
+    .skills-container {
+        flex-direction: column; /* Stack skills vertically */
+        align-items: center;
+    }
+
+    .skill-card {
+        width: 80%;
+    }
+
+    /* PERSONAL PAGE - STACK CARDS */
+    .personal-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .personal-card {
+        width: 80%;
+    }
+}
 
